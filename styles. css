@@ -1,0 +1,31 @@
+function addNotification(){
+
+let title =
+document.getElementById("title").value;
+
+let message =
+document.getElementById("message").value;
+
+if(title==="" || message===""){
+alert("Enter title and message");
+return;
+}
+
+let card =
+document.createElement("div");
+
+card.className="card";
+
+card.innerHTML=`
+<h3>${title}</h3>
+<p>${message}</p>
+<p>Status: Unread</p>
+`;
+
+document
+.getElementById("notificationList")
+.prepend(card);
+
+document.getElementById("title").value="";
+document.getElementById("message").value="";
+}

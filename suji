@@ -1,1 +1,27 @@
 index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notification Log Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+  🔔 Notification Log Panel
+</div>
+
+<input type="text" id="title" placeholder="Notification Title">
+
+<textarea id="message" placeholder="Notification Message"></textarea>
+
+<button class="addBtn" onclick="addNotification()">
+Add Notification
+</button>
+
+<div id="notificationList"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
